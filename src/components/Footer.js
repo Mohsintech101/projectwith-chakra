@@ -29,12 +29,13 @@ const Footer = () => {
                     focusBorderColor='none'
                     />
                     <Button
+                  
                     p={'0'}
                     colorScheme={'purple'}
                     variant={'outline'}
                     borderRadius={'0px 20px 20px 0px'}
                     >
-                        <AiOutlineSend/>
+                        <AiOutlineSend />
                     </Button>
                 </HStack>
                 

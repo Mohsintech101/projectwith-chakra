@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Compliment from "./components/Compliment";
 import Footer from "./components/Footer";
 import Header from './components/Header'
 import Home from './components/Home'
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/upload" element={<Upload/>} />
         <Route exact path="/login" element={<Login/>} />
         <Route exact path="/signup" element={<Signup/>} />
+        <Route exact path="/complimentary" element={<Compliment/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>

@@ -67,6 +67,13 @@ const Header = () => {
               >
                 <Link to="/upload">Upload Videos</Link>
               </Button>
+              <Button
+                variant={'ghost'}
+                colorScheme={'purple'}
+                onClick={onClose}
+              >
+                <Link to="/complimentary">Complimentary</Link>
+              </Button>
             </VStack>
             <HStack
               pos={'absolute'}
