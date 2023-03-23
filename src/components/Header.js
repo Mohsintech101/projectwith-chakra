@@ -74,6 +74,13 @@ const Header = () => {
               >
                 <Link to="/complimentary">Complimentary</Link>
               </Button>
+              <Button
+                variant={'ghost'}
+                colorScheme={'purple'}
+                onClick={onClose}
+              >
+                <Link to="/redux">Redux</Link>
+              </Button>
             </VStack>
             <HStack
               pos={'absolute'}
