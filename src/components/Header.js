@@ -13,12 +13,23 @@ import {
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { BiMenuAltLeft } from 'react-icons/bi';
+// import { HashLink} from 'react-router-hash-link'
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
+      <nav>
+      <h1>TechyStar.</h1>
+      <main>
+        <Link to={"/homie"}>Homie</Link>
+        <Link to={"/email"}>Email</Link>
+{/*         <HashLink to={"/#about"}>About</HashLink>
+        <HashLink to={"/#brands"}>Brands</HashLink> */}
+        <Link to={"/services"}>Services</Link>
+      </main>
+    </nav>
       <Button
         pos={'fixed'}
         top={4}
@@ -81,6 +92,13 @@ const Header = () => {
               >
                 <Link to="/redux">Redux</Link>
               </Button>
+              <Button
+                variant={'ghost'}
+                colorScheme={'purple'}
+                onClick={onClose}
+              >
+                <Link to="/password-checker">Password Checker</Link>
+              </Button>
             </VStack>
             <HStack
               pos={'absolute'}
@@ -103,6 +121,7 @@ const Header = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
+      
     </>
   );
 };
